@@ -1,0 +1,19 @@
+version: '2'
+services:
+  apache:
+    build: ./apache
+    ports:
+      - "80:80"
+      - "443:443"
+    links:
+      - php56
+    volumes:
+      - ./apps:/usr/local/apache2/htdocs
+      - ./apache/logs:/usr/local/apache2/logs
+      - ./apache/conf/vhosts:/usr/local/apache2/conf/vhosts
+  php56:
+    build: ./php56
+    ports:
+      - "9000:9000"
+    volumes:
+      - ./apps:/usr/local/apache2/htdocs
