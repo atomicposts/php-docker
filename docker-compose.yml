@@ -15,5 +15,13 @@ services:
     build: ./php56
     ports:
       - "9000:9000"
+    links:
+      - mysql
     volumes:
       - ./apps:/usr/local/apache2/htdocs
+  mysql:
+    image: mysql:5.6
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
