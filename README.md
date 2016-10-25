@@ -1,7 +1,7 @@
 PHP DOCKER
 =====================
 
-Develop environement Docker for projects PHP.
+Dockerized web environemnt for PHP projects.
 
 ### Services:
   - Apache 2.4
@@ -11,6 +11,12 @@ Develop environement Docker for projects PHP.
   - Mysql 5.6
   - PhpMyadmin
 
+Installing Docker
+-----------------
+Follow one of the installation guides below for your operating system:
+* [Linux] https://docs.docker.com/linux/started/
+* [Mac] http://docs.docker.com/mac/started/
+* [Windows] http://docs.docker.com/windows/started/
 
 How to use
 ----------
