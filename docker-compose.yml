@@ -28,6 +28,8 @@ services:
   php56-cli:
     build: ./php56/cli
     container_name: php56-cli
+    volumes_from:
+      - php56
     links:
       - mysql
 

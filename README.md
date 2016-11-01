@@ -11,12 +11,17 @@ Dockerized web environemnt for PHP projects.
   - Mysql 5.6
   - PhpMyadmin
 
-Installing Docker
------------------
-Follow one of the installation guides below for your operating system:
-* [Linux] https://docs.docker.com/linux/started/
-* [Mac] http://docs.docker.com/mac/started/
-* [Windows] http://docs.docker.com/windows/started/
+Directory schema
+----------------
+  - **apps**: Directory with working code
+  - **apache**: Definition imagen with Apache 2.4
+  - **apache/conf**: Apache configuration
+  - **apache/logs**: Apache logs
+  - **apache/conf/vhosts**: Apache virtual sites.
+  - **php56/fpm**: Definition imagen with PHP-FPM 5.6
+  - **php56/fpm/conf**: PHP-FPM 5.6 configuration
+  - **php56/cli**: Definition imagen with  PHP-CLI 5.6 and Composer
+  - **php56/cli/conf**: PHP-CLI 5.6 configuration
 
 How to use
 ----------
